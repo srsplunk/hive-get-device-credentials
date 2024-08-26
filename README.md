@@ -11,7 +11,21 @@ The script will then output the device credentials which can then be used to per
 This script leverages the [pyhiveapi library](https://github.com/Pyhass/Pyhiveapi).
 
 ## Usage ##
-The pyhiveapi must be pip installed before the script will work.  It would be best to do this in a [python virtual environment](https://docs.python.org/3/tutorial/venv.html).
+The pyhiveapi must be pip installed before the script will work.  It would be best to do this in a [python virtual environment](https://docs.python.org/3/tutorial/venv.html):
 
-    pytpip install pyhiveapi
+    python -m venv .venv
+    . ./venv/bin/activate
+    pip install pyhiveapi
 
+Then clone this repo and run the script:
+
+    git clone git@github.com:srsplunk/hive-get-device-credentials.git
+    cd hive-get-device-credentials
+    python3 get_device_credentials.py
+
+## Check Device ##
+Once the script has been run successfully, the device should be listed in the Hive App:
+* From Home select Manage
+* Scroll down and select Account Security
+* Select Your Trusted Devices
+* Check your new device is listed
