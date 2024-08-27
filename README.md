@@ -7,6 +7,8 @@ Once the 2FA authentication is complete, the user is prompted to enter a name fo
 
 The script will then output the device credentials which can then be used to perform a device authentication, thereby removing the need for an SMS 2FA.
 
+The check_device_auth1.py script allows you to test device credentials.
+
 ## Credits ##
 This script leverages the [pyhiveapi library](https://github.com/Pyhass/Pyhiveapi).
 
@@ -29,3 +31,7 @@ Once the script has been run successfully, the device should be listed in the Hi
 * Scroll down and select Account Security
 * Select Your Trusted Devices
 * Check your new device is listed
+
+## check_device_auth1.py ##
+
+This script allows you to test device credentials.  It prompts for the hive username, password, device key, device group key and device password.  If successful it will then output all the devices found that can output a current temperature.
