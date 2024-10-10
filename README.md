@@ -15,8 +15,8 @@ This script leverages the [pyhiveapi library](https://github.com/Pyhass/Pyhiveap
 ## Usage ##
 The pyhiveapi must be pip installed before the script will work.  It would be best to do this in a [python virtual environment](https://docs.python.org/3/tutorial/venv.html):
 
-    python -m venv .venv
-    . ./venv/bin/activate
+    python3 -m venv .venv
+    . ./.venv/bin/activate
     pip install pyhiveapi
 
 Then clone this repo and run the script:
